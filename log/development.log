@@ -2422,3 +2422,135 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 272ms (Views: 260.9ms | ActiveRecord: 1.6ms)
 
 
+  [1m[35m (108.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (86.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6298602706205296095)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProjects (20180318223509)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(6298602706205296095)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6298602706205296095)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProjects (20180318223509)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (74.5ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180318223509"]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTasks (20180318223520)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (75.6ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "name" character varying, "status" integer, "project_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_02e851e3b7"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+)[0m
+  [1m[35m (31.7ms)[0m  [1m[35mCREATE  INDEX  "index_tasks_on_project_id" ON "tasks"  ("project_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180318223520"]]
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-19 02:00:56.994154"], ["updated_at", "2018-03-19 02:00:56.994154"]]
+  [1m[35m (14.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6298602706205296095)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-19 04:01:08 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 249ms (Views: 237.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at 2018-03-19 04:01:12 +0200
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (21.2ms)
+  Rendered projects/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 101ms (Views: 81.8ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/projects" for 127.0.0.1 at 2018-03-19 04:01:14 +0200
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VSUWLy3vw+TbsDO17txSpMo03A8mMkoDtKyDATTEi291VEhgzC7W+wH4Qw17JiUtSfA0hGos8R3vn6N46cOQQ==", "project"=>{"name"=>"1"}, "commit"=>"Create Project"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "1"], ["created_at", "2018-03-19 02:01:14.859630"], ["updated_at", "2018-03-19 02:01:14.859630"]]
+  [1m[35m (49.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 72ms (ActiveRecord: 51.0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2018-03-19 04:01:14 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 38.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2018-03-19 04:01:16 +0200
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 1]]
+  Rendered projects/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tasks/new?project_id=1" for 127.0.0.1 at 2018-03-19 04:01:18 +0200
+Processing by TasksController#new as HTML
+  Parameters: {"project_id"=>"1"}
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.6ms)
+  Rendered tasks/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 45ms (Views: 36.4ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2018-03-19 04:01:21 +0200
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2w+ACNevS2bPHCDfZs0PwkSyGqsJYl0A8cFxlkivOHoxqfA4OhqVpz1zp7wdps54pXLpJzGCK4hUJJE8UEAUNQ==", "task"=>{"name"=>"scdcsd", "status"=>"12", "project_id"=>"1"}, "commit"=>"Create Task"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "scdcsd"], ["status", 12], ["project_id", 1], ["created_at", "2018-03-19 02:01:21.960259"], ["updated_at", "2018-03-19 02:01:21.960259"]]
+  [1m[35m (58.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/tasks/1
+Completed 302 Found in 68ms (ActiveRecord: 59.9ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2018-03-19 04:01:22 +0200
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tasks/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 34ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-03-19 04:01:23 +0200
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tasks/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2018-03-19 04:01:25 +0200
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (3.0ms)
+  Rendered tasks/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at 2018-03-19 04:01:26 +0200
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 1]]
+  Rendered projects/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.6ms)
+
+
