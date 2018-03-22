@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>
 
  <div class="container table-responsive">
     <div class="row">
@@ -15,7 +15,7 @@
       </tbody>
         <% @projects.each do |project| %>
           <tr>
-            <td><%= project.name %></td>
+            <td></td>
             <td><%= link_to 'Show', project %></td>
             <td><%= link_to 'Edit', edit_project_path(project) %></td>
             <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -37,7 +37,149 @@
     </table>
   </div>
   <%= link_to 'New Project', new_project_path, :class => "btn btn-info" %></a>
-</div>
+</div>-->
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ToDo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+    body {
+      background: linear-gradient(to right, rgba(255, 250, 205,0), rgba(255, 218, 185,1));
+    }
+
+    .container {
+      width: 50%;
+      border-radius: 2%;
+      background-color: white;
+    }
+
+    .icon-green {
+      color: green;
+    }
+
+    .icon-white {
+      color: white;
+    }
+
+    .icon-grey {
+      color: Silver;
+    }
+
+    .input-group .form-control {
+      width: 78%;
+    }
+
+    .input-group {
+      width: 100%;
+    }
+
+    .hovered:hover {
+      background-color: rgb(252, 254, 213);
+    }
+
+    .row {
+      margin-top: 10px;
+    }
+
+    .row-header {
+      background-color: rgb(73, 125, 199);
+      color: white;
+      margin-top: 0;
+    }
+
+    .btn-success {
+      width: 22%;
+    }
+
+    .glyphicon {
+      line-height: 2.5;
+    }
+
+    .glyphicon-plus {
+      transform: scale(1.5);
+    }
+
+    .jumbotron {
+      background-color: transparent;
+    }
+
+    .custom-control-label {
+      border-left: 1px grey;
+      border-right: 1px grey;
+    }
+
+    .container .custom-checkbox .checkbox-style-modified {
+      margin-right: 2%;
+    }
+
+
+  </style>
+</head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Welcome!</h1>
+      <p>Here you can find your tasks</p>
+    </div>
+
+  <% @projects.each do |project| %>
+
+
+	<%=  form_for @task do |form|%>
+	    <div class="container" style="margin-top: 20px">
+	    <div class="row row-header">
+	      <div class="col-sm-1"><span class="glyphicon glyphicon-calendar icon-grey"></span> </div>
+	      <div class="col-sm-9"><h4><%= project.name %></h4></div>
+	      <div class="col-sm-1"><%= link_to '<span class="glyphicon glyphicon-pencil icon-white"></span>'.html_safe, edit_project_path(project) %></div>
+	      <div class="col-sm-1"><%= link_to '<span class="glyphicon glyphicon-trash icon-white"></span>'.html_safe, project, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+	    </div>
+	    <div class="row">
+	      <div class="col-sm-1"><span class="glyphicon glyphicon-plus icon-green"></span></div>
+			<div class="col-sm-11">
+			<div class="input-group">
+		      <%= form.text_field :name, id: :task_name, placeholder: "Start typing here to create a task",  :class =>"form-control" %>
+			  <div class="input-group-append">
+			  	  <%= hidden_field_tag "task[project_id]", "#{project.id}" %>
+	  			  <%= hidden_field_tag "task[status]", "0" %>
+			      <%= form.submit 'Add Task', :class => 'btn btn-success' %>
+			  </div>
+			</div>
+	      </div>
+		</div>
+    <% end %>
+
+        
+        
+  <% project.tasks.each do |task| %>
+        <div class="row hovered">
+          <div class="col-sm-9">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input checkbox-style-modified" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1"><%= task.name %></label>
+            </div>
+          </div>
+	          <div class="col-sm-1 "><span class="glyphicon glyphicon-move icon-grey"></span></div>
+	          <div class="col-sm-1 "><%= link_to '<span class="glyphicon glyphicon-pencil icon-grey"></span>'.html_safe, edit_task_path(task, project_id: project.id) %></div>
+	          <div class="col-sm-1 "><%= link_to '<span class="glyphicon glyphicon-trash icon-grey"></span>'.html_safe, task, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+          </div>
+        <% end %>
+
+  		</div>
+    <% end %>
+
+    <div class="footer" style="margin-top: 20px">
+      <p class="text-center">
+      		<%= link_to '<span class="glyphicon glyphicon-plus icon-dark"></span> <b>&nbsp;Add TODO List</b>'.html_safe, new_project_path, :class => "btn btn-info" %> 
+	 </p>
+    </div>
+
+  </body>
+</html>

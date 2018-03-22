@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
   # GET /projects.json
   def index
     @projects = Project.all
+    @task = Task.new
   end
 
   # GET /projects/1
@@ -28,7 +29,7 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.html { redirect_to :controller => 'projects', :action => 'index' }
         format.json { render :show, status: :created, location: @project }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class ProjectsController < ApplicationController
   def update
     respond_to do |format|
       if @project.update(project_params)
-        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
+        format.html { redirect_to :controller => 'projects', :action => 'index' }
         format.json { render :show, status: :ok, location: @project }
       else
         format.html { render :edit }
@@ -54,6 +55,9 @@ class ProjectsController < ApplicationController
   # DELETE /projects/1
   # DELETE /projects/1.json
   def destroy
+     @project.tasks.each do |item|
+      item.destroy
+    end
     @project.destroy
     respond_to do |format|
       format.html { redirect_to projects_url, notice: 'Project was successfully destroyed.' }

@@ -20,6 +20,7 @@ class TasksController < ApplicationController
 
   # GET /tasks/1/edit
   def edit
+    @project_id = params[:project_id] || 0
   end
 
   # POST /tasks
@@ -29,10 +30,10 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       if @task.save
-        format.html { redirect_to @task, notice: 'Task was successfully created.' }
+        format.html { redirect_to :controller => 'projects', :action => 'index' }
         format.json { render :show, status: :created, location: @task }
       else
-        format.html { render :new }
+        format.html { render :project }
         format.json { render json: @task.errors, status: :unprocessable_entity }
       end
     end
@@ -43,7 +44,7 @@ class TasksController < ApplicationController
   def update
     respond_to do |format|
       if @task.update(task_params)
-        format.html { redirect_to @task, notice: 'Task was successfully updated.' }
+        format.html { redirect_to :controller => 'projects', :action => 'index' }
         format.json { render :show, status: :ok, location: @task }
       else
         format.html { render :edit }
@@ -57,7 +58,7 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     respond_to do |format|
-      format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
+        format.html { redirect_to :controller => 'projects', :action => 'index' }
       format.json { head :no_content }
     end
   end
