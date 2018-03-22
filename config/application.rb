@@ -9,7 +9,11 @@ Bundler.require(*Rails.groups)
 module Todotestapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.1
+    config.generators do |g|
+    g.test_framework  :rspec, :fixture => false
+    g.view_specs      false
+    g.helper_specs    false
+end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

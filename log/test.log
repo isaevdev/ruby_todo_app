@@ -1,0 +1,824 @@
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.7ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.319472', '2018-03-22 22:18:43.319472', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.4ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.819304', '2018-03-22 22:18:43.819304', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.824084', '2018-03-22 22:18:43.824084', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.828135', '2018-03-22 22:18:43.828135', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.831961', '2018-03-22 22:18:43.831961', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.835837', '2018-03-22 22:18:43.835837', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.840038', '2018-03-22 22:18:43.840038', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.844030', '2018-03-22 22:18:43.844030', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.847898', '2018-03-22 22:18:43.847898', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.851615', '2018-03-22 22:18:43.851615', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.855132', '2018-03-22 22:18:43.855132', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.858881', '2018-03-22 22:18:43.858881', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.862297', '2018-03-22 22:18:43.862297', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:18:43.865779', '2018-03-22 22:18:43.865779', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.7ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.716410', '2018-03-22 22:19:05.716410', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.779666', '2018-03-22 22:19:05.779666', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.783596', '2018-03-22 22:19:05.783596', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.786976', '2018-03-22 22:19:05.786976', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.790998', '2018-03-22 22:19:05.790998', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.794443', '2018-03-22 22:19:05.794443', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.798027', '2018-03-22 22:19:05.798027', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.801892', '2018-03-22 22:19:05.801892', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.805502', '2018-03-22 22:19:05.805502', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.809733', '2018-03-22 22:19:05.809733', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.813110', '2018-03-22 22:19:05.813110', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.816347', '2018-03-22 22:19:05.816347', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.819548', '2018-03-22 22:19:05.819548', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:05.822795', '2018-03-22 22:19:05.822795', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.3ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.716920', '2018-03-22 22:19:25.716920', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.779654', '2018-03-22 22:19:25.779654', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.783642', '2018-03-22 22:19:25.783642', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.787570', '2018-03-22 22:19:25.787570', 980190962, 980190962)[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.791997', '2018-03-22 22:19:25.791997', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.796043', '2018-03-22 22:19:25.796043', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.799793', '2018-03-22 22:19:25.799793', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.803860', '2018-03-22 22:19:25.803860', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.807921', '2018-03-22 22:19:25.807921', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.812174', '2018-03-22 22:19:25.812174', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.816104', '2018-03-22 22:19:25.816104', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.819909', '2018-03-22 22:19:25.819909', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.1ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.823678', '2018-03-22 22:19:25.823678', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:19:25.827310', '2018-03-22 22:19:25.827310', 980190962, 980190962)[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (852.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:23:22.643976', '2018-03-22 22:23:22.643976', 980190962, 980190962)[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:23:22.643976', '2018-03-22 22:23:22.643976', 298486374, 298486374)[0m
+  [1m[36mFixture Delete (0.6ms)[0m  [1m[31mDELETE FROM "projects"[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2018-03-22 22:23:22.939317', '2018-03-22 22:23:22.939317', 980190962)[0m
+  [1m[36mFixture Insert (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2018-03-22 22:23:22.939317', '2018-03-22 22:23:22.939317', 298486374)[0m
+  [1m[35m (215.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "projects" ENABLE TRIGGER ALL;ALTER TABLE "tasks" ENABLE TRIGGER ALL[0m
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-03-23 00:23:23 +0200
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "MyString"], ["created_at", "2018-03-22 22:23:23.281582"], ["updated_at", "2018-03-22 22:23:23.281582"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects" for 127.0.0.1 at 2018-03-23 00:23:23 +0200
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 980190962]]
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 298486374]]
+  Rendered projects/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 8217ms (Views: 8212.9ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects/980190962" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/980190962" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 980190962]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 980190962]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects/new" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.6ms)
+  Rendered projects/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/projects/980190962" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects/980190962/edit" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (0.7ms)
+  Rendered projects/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+TasksControllerTest: test_should_show_task
+------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks/980190962" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendered tasks/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+TasksControllerTest: test_should_create_task
+--------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+Started POST "/tasks" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>{"name"=>"MyString", "project_id"=>"980190962", "status"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "MyString"], ["status", 1], ["project_id", 980190962], ["created_at", "2018-03-22 22:23:31.548917"], ["updated_at", "2018-03-22 22:23:31.548917"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" ORDER BY "tasks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+TasksControllerTest: test_should_destroy_task
+---------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+Started DELETE "/tasks/980190962" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by TasksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 980190962]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+TasksControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 298486374], ["LIMIT", 1]]
+  Rendered tasks/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------
+TasksControllerTest: test_should_get_new
+----------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks/new" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.6ms)
+  Rendered tasks/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------
+TasksControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks/980190962/edit" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+TasksControllerTest: test_should_update_task
+--------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/tasks/980190962" for 127.0.0.1 at 2018-03-23 00:23:31 +0200
+Processing by TasksController#update as HTML
+  Parameters: {"task"=>{"name"=>"MyString", "project_id"=>"980190962", "status"=>"1"}, "id"=>"980190962"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" DISABLE TRIGGER ALL;ALTER TABLE "projects" DISABLE TRIGGER ALL;ALTER TABLE "tasks" DISABLE TRIGGER ALL[0m
+  [1m[35m (986.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "tasks"[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:32:48.574734', '2018-03-22 22:32:48.574734', 980190962, 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "created_at", "updated_at", "id", "project_id") VALUES ('MyString', 1, '2018-03-22 22:32:48.574734', '2018-03-22 22:32:48.574734', 298486374, 298486374)[0m
+  [1m[36mFixture Delete (0.2ms)[0m  [1m[31mDELETE FROM "projects"[0m
+  [1m[36mFixture Insert (0.1ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2018-03-22 22:32:48.580942', '2018-03-22 22:32:48.580942', 980190962)[0m
+  [1m[36mFixture Insert (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at", "id") VALUES ('MyString', '2018-03-22 22:32:48.580942', '2018-03-22 22:32:48.580942', 298486374)[0m
+  [1m[35m (59.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "ar_internal_metadata" ENABLE TRIGGER ALL;ALTER TABLE "projects" ENABLE TRIGGER ALL;ALTER TABLE "tasks" ENABLE TRIGGER ALL[0m
+  [1m[35m (118.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+TasksControllerTest: test_should_update_task
+--------------------------------------------
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/tasks/980190962" for 127.0.0.1 at 2018-03-23 00:32:48 +0200
+Processing by TasksController#update as HTML
+  Parameters: {"task"=>{"name"=>"MyString", "project_id"=>"980190962", "status"=>"1"}, "id"=>"980190962"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+TasksControllerTest: test_should_get_index
+------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks" for 127.0.0.1 at 2018-03-23 00:32:48 +0200
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 298486374], ["LIMIT", 1]]
+  Rendered tasks/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------
+TasksControllerTest: test_should_get_new
+----------------------------------------
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks/new" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (9.0ms)
+  Rendered tasks/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+TasksControllerTest: test_should_create_task
+--------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+Started POST "/tasks" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>{"name"=>"MyString", "project_id"=>"980190962", "status"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "status", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "MyString"], ["status", 1], ["project_id", 980190962], ["created_at", "2018-03-22 22:32:49.024405"], ["updated_at", "2018-03-22 22:32:49.024405"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" ORDER BY "tasks"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------
+TasksControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks/980190962/edit" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/_form.html.erb (1.7ms)
+  Rendered tasks/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+TasksControllerTest: test_should_show_task
+------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/tasks/980190962" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering tasks/show.html.erb within layouts/application
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendered tasks/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+TasksControllerTest: test_should_destroy_task
+---------------------------------------------
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+Started DELETE "/tasks/980190962" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by TasksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 980190962]]
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 980190962]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 298486374]]
+  Rendered projects/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects/new" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by ProjectsController#new as HTML
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (1.9ms)
+  Rendered projects/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started POST "/projects" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by ProjectsController#create as HTML
+  Parameters: {"project"=>{"name"=>"MyString"}}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "MyString"], ["created_at", "2018-03-22 22:32:49.086864"], ["updated_at", "2018-03-22 22:32:49.086864"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" ORDER BY "projects"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects/980190962/edit" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by ProjectsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (1.0ms)
+  Rendered projects/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/projects/980190962" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+Started PATCH "/projects/980190962" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by ProjectsController#update as HTML
+  Parameters: {"project"=>{"name"=>"MyString"}, "id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+Started DELETE "/projects/980190962" for 127.0.0.1 at 2018-03-23 00:32:49 +0200
+Processing by ProjectsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mProject Load (0.1ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."project_id" = $1[0m  [["project_id", 980190962]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 980190962]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "projects" WHERE "projects"."id" = $1[0m  [["id", 980190962]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/projects
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+----------------------------------------
+TasksControllerTest: test_should_get_new
+----------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+TasksControllerTest: test_should_show_task
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+-----------------------------------------
+TasksControllerTest: test_should_get_edit
+-----------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------
+TasksControllerTest: test_should_get_index
+------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+TasksControllerTest: test_should_update_task
+--------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+TasksControllerTest: test_should_create_task
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+TasksControllerTest: test_should_destroy_task
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+-------------------------------------------
+ProjectsControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+------------------------------------------------
+ProjectsControllerTest: test_should_show_project
+------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------
+ProjectsControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------
+ProjectsControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_create_project
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+---------------------------------------------------
+ProjectsControllerTest: test_should_destroy_project
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+--------------------------------------------------
+ProjectsControllerTest: test_should_update_project
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
